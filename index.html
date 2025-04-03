@@ -518,7 +518,6 @@
 
     <footer class="footer">
       <div class="container footer-flex">
-        <!-- <div class="footer-flex"> -->
         <div class="footer-logo-paragraf">
           <a class="footer-link" href="./index.html"
             >Web<span class="footer-link-span">Studio</span></a
@@ -569,10 +568,34 @@
             </li>
           </ul>
         </div>
-        <!-- </div> -->
+        <div class="footer-subscribe">
+          <p class="footpar">Subscribe</p>
+          <form action="">
+            <div class="">
+              <label for="" class="footer-subscribe-label">
+                <input
+                  type="email"
+                  class="footer-subscribe-input"
+                  name="user-email"
+                  placeholder="Email"
+                  id="user-email"
+                />
+              </label>
+              <button class="btn-footer-subs" type="button">
+                Subscribe
+                <svg class="svgfootframe" width="24" height="24">
+                  <use href="./images/icons.svg#icon-Frame-3"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
-    <div class="backdrop">
+
+    <!--------------------------------backdrop-------------------------------->
+
+    <!-- <div class="backdrop is-open">
       <div class="modal">
         <button class="modal-close-btn" type="button">
           <svg class="modal-icon-x" width="8" height="8">
@@ -626,16 +649,36 @@
               </svg>
             </div>
           </div>
-          <label for="comment" class="modal-label">Comment</label>
-          <textarea
-            name="comment"
-            id="comment"
-            placeholder="Text input"
-            class="modal-input"
-            type="text"
-          ></textarea>
+          <div class="modal-input-wrap">
+            <div class="modal-field">
+              <label for="comment" class="modal-label">Comment</label>
+              <textarea
+                name="comment"
+                id="comment"
+                placeholder="Text input"
+                class="modal-textarea"
+                type="text"
+              ></textarea>
+            </div>
+
+            <div class="">
+              <input
+                type="checkbox"
+                class=""
+                name="checkbox"
+                placeholder=""
+                id="checkbox"
+                value=""
+              />
+              <label for="checkbox" class=""
+                >I accept the terms and conditions of the Privacy Policy</label
+              >
+            </div>
+
+            <button class="btn-modal-send" type="button">Send</button>
+          </div>
         </form>
       </div>
-    </div>
+    </div> -->
   </body>
 </html>
