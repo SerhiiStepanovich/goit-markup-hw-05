@@ -628,8 +628,8 @@ address {
   left: 50%;
   transform: translate(-50%, -50%);
   resize: none;
-  transition: tranform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 72px 24px 24px 24px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop:not(.is-open) .modal {
@@ -716,15 +716,14 @@ address {
   letter-spacing: 0.04em;
   color: #8e8f99;
   margin-bottom: 4px;
-  display: inline-block;
+  display: block;
 }
 
 .modal-icon {
-  /* fill: #000000; */
   position: absolute;
   left: 16px;
-  top: 25%;
-  transform: translate(-50%);
+  top: 50%;
+  transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -780,6 +779,12 @@ address {
 
 .modal-checkbox {
   margin-bottom: 24px;
+}
+
+.modal-checkbox-input:checked + .modal-checkbox-label span {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
 }
 .modal-checkbox-label {
   font-size: 12px;
