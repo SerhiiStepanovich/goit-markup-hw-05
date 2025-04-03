@@ -776,6 +776,10 @@ address {
 .modal-field {
   margin-bottom: 8px;
 }
+.modal-input-wraptxtarea {
+  margin-bottom: 16px;
+  /* position: relative; */
+}
 
 .modal-checkbox {
   margin-bottom: 24px;
